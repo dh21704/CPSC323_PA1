@@ -10,4 +10,22 @@ token_specification = [
     ]
 
 def lexer(source_code):
-    
+    try:
+        with open(source_code, 'r') as file:
+            content = file.read()
+            
+            single_regex_string = '|'.join(f'(?P<{name}>{pattern})' for name, pattern in token_specification)
+            
+            matches = re.finditer(single_regex_string, content)
+            
+            for i in matches:
+              print(f"Found '{i.group()}' at position {i.start()}: {i.end()}")
+            
+            
+            
+            
+    except FileNotFoundError:
+        print("the file was not found")
+        
+
+lexer("input_sourcecode.txt")
