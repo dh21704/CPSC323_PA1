@@ -8,3 +8,8 @@ PUNCTUATION	                                 [{}();,]	Common punctuation symbols
 STRING	                                     "(.*?)"	Text enclosed in double quotes.
 WHITESPACE	                                  \s+	Spaces, tabs, or newlines.
 UNKNOWN	                                     .	Any other character not matched above.
+
+
+Each DFA is used to specify a specific token. 
+When a character is read from left to right the lexer transitions through states until it reaches it's final accepting state.
+
