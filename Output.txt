@@ -1,16 +1,16 @@
-IDENTIFIER   int
+KEYWORD      int
 IDENTIFIER   main
 UNKNOWN      (
 UNKNOWN      )
 UNKNOWN      {
-IDENTIFIER   int
+KEYWORD      int
 IDENTIFIER   sum
 UNKNOWN      =
 INTEGER      0
 UNKNOWN      ;
-IDENTIFIER   for
+KEYWORD      for
 UNKNOWN      (
-IDENTIFIER   int
+KEYWORD      int
 IDENTIFIER   i
 UNKNOWN      =
 INTEGER      1
@@ -27,7 +27,7 @@ UNKNOWN      +
 INTEGER      1
 UNKNOWN      )
 UNKNOWN      {
-IDENTIFIER   if
+KEYWORD      if
 UNKNOWN      (
 IDENTIFIER   i
 UNKNOWN      %
@@ -44,7 +44,7 @@ UNKNOWN      +
 IDENTIFIER   i
 UNKNOWN      ;
 UNKNOWN      }
-IDENTIFIER   else
+KEYWORD      else
 UNKNOWN      {
 IDENTIFIER   sum
 UNKNOWN      =
@@ -54,7 +54,7 @@ IDENTIFIER   i
 UNKNOWN      ;
 UNKNOWN      }
 UNKNOWN      }
-IDENTIFIER   while
+KEYWORD      while
 UNKNOWN      (
 IDENTIFIER   sum
 UNKNOWN      <
@@ -87,7 +87,7 @@ UNKNOWN      /
 IDENTIFIER   print
 IDENTIFIER   status
 UNKNOWN      }
-IDENTIFIER   return
+KEYWORD      return
 IDENTIFIER   sum
 UNKNOWN      ;
 UNKNOWN      }
