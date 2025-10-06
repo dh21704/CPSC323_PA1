@@ -1,10 +1,10 @@
-Regular Expressions
-Token Type	Regular Expression	Description
-IDENTIFIER	[A-Za-z_][A-Za-z0-9_]*	Starts with a letter or underscore, followed by letters, digits, or underscores.
-INTEGER	[0-9]+	One or more digits.
-KEYWORD	`(int	float
-OPERATOR	`(+	-
-PUNCTUATION	[{}();,]	Common punctuation symbols in C++.
-STRING	"(.*?)"	Text enclosed in double quotes.
-WHITESPACE	\s+	Spaces, tabs, or newlines.
-UNKNOWN	.	Any other character not matched above.
+                   Regular Expressions
+Token Type	                                 Regular Expression	Description
+IDENTIFIER	                                 [A-Za-z_][A-Za-z0-9_]*	Starts with a letter or underscore, followed by letters, digits, or underscores.
+INTEGER	                                     [0-9]+	One or more digits.
+KEYWORD	                                     `(int	float
+OPERATOR	                                    `(+	-
+PUNCTUATION	                                 [{}();,]	Common punctuation symbols in C++.
+STRING	                                     "(.*?)"	Text enclosed in double quotes.
+WHITESPACE	                                  \s+	Spaces, tabs, or newlines.
+UNKNOWN	                                     .	Any other character not matched above.
