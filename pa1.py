@@ -14,13 +14,29 @@ def lexer(source_code):
         with open(source_code, 'r') as file:
             content = file.read()
             
+         
+            
             single_regex_string = '|'.join(f'(?P<{name}>{pattern})' for name, pattern in token_specification)
             
             matches = re.finditer(single_regex_string, content)
             
-            for i in matches:
-              print(f"Found '{i.group()}' at position {i.start()}: {i.end()}")
+            tokens = []
             
+            
+            for i in matches:
+              #print(f"Found '{i.group()}' at position {i.start()}: {i.end()}")
+              for name, value in i.groupdict().items():
+                if value and name != "WHITESPACE":
+                  #print(f"{name:<12} {value}")
+                  tokens.append((name, value)) #appending as a tuple
+                
+                  
+            
+            #print(tokens)  
+
+
+            return tokens
+              
             
             
             
@@ -28,4 +44,12 @@ def lexer(source_code):
         print("the file was not found")
         
 
-lexer("input_sourcecode.txt")
+t = lexer("input_sourcecode.txt")
+
+with open('output_file.txt', 'w') as file:
+  for token_type, lexeme in t:
+      line = f"{token_type:<12} {lexeme}\n"
+      file.write(line)
+  
+
+
