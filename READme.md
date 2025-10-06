@@ -1,18 +1,14 @@
-Daniel Hernandez
-CPSC 323
-Fall 2025
-Professor Rong Jin
-PA 1
+# Lexer Project
 
-#What does this project do?
-This program reads a source file, identifies tokens and lexemes, separates them, and creates an output file creating identifiying the lexemes and tokens.
+## What Does This Project Do?
+This program reads a source file, identifies tokens and lexemes, separates them, and creates an output file that lists each token alongside its corresponding lexeme.
 
-##Overview
-This program reads an input file containing source code and outputs tokens
+## Overview
+The program takes an input file containing simple C++ source code and outputs a list of recognized tokens, such as identifiers, integers, and punctuation marks.
 
-##How to Run
-1. Save your code as `lexer.py`
-2. Ensure your input file is named `input_sourcecode.txt`
+## How to Run
+1. Save your code as **lexer.py**
+2. Ensure your input file is named **input_sourcecode.txt**
 3. Run the program:
-
-
+   ```bash
+   python lexer.py
